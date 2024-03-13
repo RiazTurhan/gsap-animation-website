@@ -103,16 +103,18 @@ gsap.from('.page2 #box',{
 
 })
 
+let manu = document.getElementById('#menuList')
+let bar = document.getElementById('#icon')
 
-let menuList = document.getElementById('#menuList')
-menuList.style.maxWidth = '0px'
 
-function toggoleMenu(){
-  if(menuList.style.maxWidth = '0px'){
-    menuList.style.maxWidth = '300px'
-  }else{
-    menuList.style.maxWidth = '0px'
-  }
+if(bar){
+  bar.addEventListener("click", ()=>{
+    manu.classList.add('active')
+  })
+}
+if(bar){
+  bar.addEventListener("click", ()=>{
+    manu.classList.remove('active')
+  })
 }
 
-toggoleMenu()
