@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* page1 part start  */
+
+
+.page1{
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: whitesmoke;
+  padding: 0 20px;
+}
+
+/* nav start  */
+
+ nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid rgb(114, 113, 113);
+
+ }
+
+ ul{
+  display: flex;
+  gap: 60px;
+ }
+
+li{
+  list-style: none;
+} 
+
+ a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+ }
+
+ 
+
+ .sing{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+ }
+
+ .sing h2, i{
+  font-weight:100 ;
+  font-size: 15px;
+ }
+
+ .sing i{
+  font-size: 20px;
+ }
+ 
+
+ /* nav start end */
+
+/* main part start  */
+
+.main{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin-top: 50px;
+}
+
+/* left part start  */
+
+.left {
+  width: 50%;
+  height: 100%;
+  /* background-color: salmon; */
+  padding: 20px 20px;
+}
+
+.left> .text > h1{
+  font-size: 89px;
+  font-weight: 400;
+  /* display: flex; */
+  text-transform: uppercase;
+}
+
+.left> .text > h1 {
+  display: flex;
+  width: 200px;
+}
+
+.left> .text > h1 > span > img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 2px solid whitesmoke;
+}
+
+
+.line{
+  height: 2px;
+  width: 0%;
+  background-color: whitesmoke;
+}
+
+.left .bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.left .bottom > h2{
+  font-weight: 300;
+}
+/* left part end  */
+
+
+/* right part start  */
+
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+  /* background-color: gold; */
+}
+
+.right > img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+  padding: 40px 50px;
+}
+
+/* right part end  */
+
+
+/* main part End  */
+
+
+
+/* page2 part start  */
+
+
+.page2{
+  width: 100%;
+  height: 80vh;
+  background-color: #000;
+  padding:0px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page2 .boxes .box1, .box2, .box3{
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+
+  
+}
+
+.boxes{
+  display: flex;
+}
+
+.page2 .box1{
+  background-color: orangered;
+  
+  rotate: 50deg;
+}
+.page2 .box2{
+  background-color: rgb(255, 176, 29);
+  
+  rotate: 10deg;
+}
+
+.page2 > .text{
+  color: whitesmoke;
+}
+
+.page2 > .text > h1{
+  border: 2px solid whitesmoke;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#icon{
+  display: none;
+}
+
+
+@media screen and (max-width: 767px){
+  
+  body{
+    overflow-x: hidden;
+  }
+  .main{
+    /* overflow-x: hidden; */
+    flex-direction: column;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .page2{
+    flex-direction: column;
+    gap: 200px;
+    padding:200px 50px;
+    height: 80%;
+    
+    
+  }
+
+  nav > ul{
+   position: absolute;
+   top: 70px;
+   background-color: whitesmoke;
+   border-radius: 5px; 
+
+  }
+
+  nav > ul > li{
+    padding: 20px 20px;
+  }
+
+  nav > ul > li a{
+    color: black;
+  }
+
+  #icon{
+    display: block;
+    font-size: 20px;
+  }
+
+  nav > h1{
+    font-size: 18px;
+  }
+  
+  .left> .text > h1{
+    font-size: 59px;
+    
+  }
+
+  .line{
+    display: none;
+  }
+
+
+}
